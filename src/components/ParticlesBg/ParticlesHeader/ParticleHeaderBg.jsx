@@ -1,7 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-
+import gradle from "../../../img/gradle.jpg"
 export default function ParticleHeaderBg() {
     const particlesInit = async (main) => {
         console.log(main);
@@ -152,11 +152,6 @@ export default function ParticleHeaderBg() {
                   height: 20,
                 },
                 {
-                  src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg",
-                  width: 20,
-                  height: 20,
-                },
-                {
                   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                   width: 20,
                   height: 20,
@@ -173,11 +168,6 @@ export default function ParticleHeaderBg() {
                 },
                 {
                   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg",
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
                   width: 20,
                   height: 20,
                 },
@@ -202,6 +192,11 @@ export default function ParticleHeaderBg() {
                   height: 20,
                 },
                 {
+                  src: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/maven/maven-original.svg",
+                  width: 20,
+                  height: 20,
+                },
+                {
                   src: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/java/java-plain.svg",
                   width: 20,
                   height: 20,
@@ -210,6 +205,11 @@ export default function ParticleHeaderBg() {
               images: [
                 {
                   src: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/maven/maven-original.svg",
+                  width: 20,
+                  height: 20,
+                },
+                {
+                  src: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/java/java-plain.svg",
                   width: 20,
                   height: 20,
                 },
@@ -260,16 +260,6 @@ export default function ParticleHeaderBg() {
                 },
                 {
                   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
                   width: 20,
                   height: 20,
                 },
