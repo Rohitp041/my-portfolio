@@ -4,16 +4,17 @@ import {
     Routes,
 } from "react-router-dom";
 import './App.css';
-
 /* Pages */
 import Home from "./pages/Home/HomePage";
 import About from "./pages/About/AboutPage";
 import Services from "./pages/Service/ServicesPage";
+import { FormattedMessage } from 'react-intl';
 
 
 import RouterScrollTop from "./components/ScrollToTop/RouterScrollTop"
 import Experience from './pages/Experience/ExperiencePage';
 import Contact from './pages/Contact/ContactPage';
+import ParticleHeaderBg from '../src/components/ParticlesBg/ParticlesHeader/ParticleHeaderBg';
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -22,23 +23,42 @@ function App() {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 2000)
+        }, 9000)
     }, [])
     return (
         <>
             <RouterScrollTop />
-            {
-                loading ?
+            {loading ? (
+         <><section className="inicio" id="inicio">
 
-                    <div className='loading-pag'>
-                        <div className="loader">
-                            <span>=(PatelRohit)=></span>
-                            <span>=(PatelRohit)=></span>
-                        </div>
+                    <div className="titulo">
+
+                        <p data-aos="fade-up" data-aos-delay="600">
+                            <FormattedMessage
+                                id='greeting'
+                                defaultMessage='Welcome' />
+                        </p>
+                        <h1 data-aos="fade-up" data-aos-delay="800">
+                            <FormattedMessage
+                                id='name'
+                                defaultMessage='To the Space of creativity' />
+
+                        </h1>
+                        <p data-aos="fade-up" data-aos-delay="1000">
+                            <FormattedMessage
+                                id='rol'
+                                defaultMessage='&' />
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="1000">
+                            <FormattedMessage
+                                id='rol'
+                                defaultMessage='Professionalism in my portfolio...' />
+                        </p>
                     </div>
-
-                    :
-
+                </section><ParticleHeaderBg /></>
+                    
+               
+            ) :
                     <Routes>
                         <Route path="/" element={<Home />}></Route>
                         <Route exact path="/about" element={<About />}></Route>
